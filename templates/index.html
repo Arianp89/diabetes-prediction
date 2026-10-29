@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Diabetes Prediction{% endblock %}
+
+{% block content %}
+<div class="container home-container">
+    <p class="eyebrow">MACHINE LEARNING PROJECT</p>
+
+    <h1>Diabetes Prediction System</h1>
+
+    <p class="description">
+        Explore a machine-learning model that predicts the likelihood
+        of diabetes based on selected health measurements.
+    </p>
+
+    <div class="home-info">
+        <h2>About This Project</h2>
+        <p>
+            This project uses Python and machine learning to demonstrate
+            how a trained classification model processes input data
+            and generates a prediction.
+        </p>
+    </div>
+
+    <a class="primary-link" href="/predict">Start Prediction</a>
+
+    <p class="disclaimer">
+        Educational use only. Predictions are not medical diagnoses
+        and should not be used to make healthcare decisions.
+    </p>
+</div>
+{% endblock %}

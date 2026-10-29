@@ -1,0 +1,61 @@
+```html
+{% extends "base.html" %}
+
+{% block title %}Predict | Diabetes Prediction{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Diabetes Prediction</h1>
+
+    <p class="description">
+        Enter the required information to get a model prediction.
+    </p>
+
+    <form action="/predict" method="POST">
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="Pregnancies">Pregnancies</label>
+                <input id="Pregnancies" type="number" name="Pregnancies" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Glucose">Glucose</label>
+                <input id="Glucose" type="number" name="Glucose" min="0" step="any" required>
+            </div>
+
+            <div class="form-group">
+                <label for="BloodPressure">Blood Pressure</label>
+                <input id="BloodPressure" type="number" name="BloodPressure" min="0" step="any" required>
+            </div>
+
+            <div class="form-group">
+                <label for="SkinThickness">Skin Thickness</label>
+                <input id="SkinThickness" type="number" name="SkinThickness" min="0" step="any" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Insulin">Insulin</label>
+                <input id="Insulin" type="number" name="Insulin" min="0" step="any" required>
+            </div>
+
+            <div class="form-group">
+                <label for="BMI">BMI</label>
+                <input id="BMI" type="number" name="BMI" min="0" step="any" required>
+            </div>
+
+            <div class="form-group">
+                <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label>
+                <input id="DiabetesPedigreeFunction" type="number" name="DiabetesPedigreeFunction" min="0" step="any" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Age">Age</label>
+                <input id="Age" type="number" name="Age" min="1" required>
+            </div>
+        </div>
+
+        <button type="submit">Predict</button>
+    </form>
+</div>
+{% endblock %}
+```

@@ -1,0 +1,53 @@
+
+{% extends "base.html" %}
+
+{% block title %}Prediction Result | Diabetes Prediction{% endblock %}
+
+{% block content %}
+<div class="container result-container">
+
+    <p class="eyebrow">MACHINE LEARNING ANALYSIS</p>
+
+    <h1>Prediction Result</h1>
+
+    <p class="description">
+        The model has processed the information you provided.
+    </p>
+
+    <section class="result-card {{ result_status }}">
+
+        <div class="result-icon">
+            {{ result_icon }}
+        </div>
+
+        <p class="result-label">MODEL OUTPUT</p>
+
+        <h2>{{ result_title }}</h2>
+
+        <p class="result-message">
+            {{ result_message }}
+        </p>
+
+    </section>
+
+    <div class="result-actions">
+        <a class="primary-link" href="/predict">
+            Try Again
+        </a>
+
+        <a class="secondary-link" href="/">
+            Back to Home
+        </a>
+    </div>
+
+    <div class="disclaimer-card">
+        <strong>Important Notice</strong>
+        <p>
+            This project is for educational purposes only.
+            The prediction is not a medical diagnosis and
+            must not be used to make healthcare decisions.
+        </p>
+    </div>
+
+</div>
+{% endblock %}

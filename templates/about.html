@@ -1,0 +1,45 @@
+```html
+{% extends "base.html" %}
+
+{% block title %}About | Diabetes Prediction{% endblock %}
+
+{% block content %}
+<div class="container">
+    <p class="eyebrow">ABOUT THE PROJECT</p>
+
+    <h1>About This Project</h1>
+
+    <p class="description">
+        This is an educational machine-learning project built with Python
+        and Flask to demonstrate a basic prediction workflow.
+    </p>
+
+    <div class="home-info">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Scikit-learn</li>
+            <li>Flask</li>
+            <li>HTML and CSS</li>
+        </ul>
+    </div>
+
+    <div class="home-info">
+        <h2>How It Works</h2>
+        <p>
+            The application receives eight input features, passes them
+            to a previously trained classification model, and displays
+            the model's prediction.
+        </p>
+    </div>
+
+    <p class="disclaimer">
+        This project is for educational purposes only. Its output is not
+        a medical diagnosis.
+    </p>
+
+    <a class="primary-link" href="/predict">Try the Prediction Form</a>
+</div>
+{% endblock %}
+```
